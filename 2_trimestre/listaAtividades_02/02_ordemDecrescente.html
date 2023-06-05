@@ -1,14 +1,41 @@
+<meta charset="UTF-8">.
 <script>
+
     /*
     //PROBLEMA
     Faça um script que leia três números e mostre-os em ordem decrescente.
     */
 
     //ENTRADA
+    const num1 = Number(prompt(`Inorme um primeiro numero`));
+    const num2 = Number(prompt(`Informe um segundo numero`));
+    const num3 = Number(prompt(`Informe um terceiro numero`));
 
-    
     //PROCESSAMENTO
-    
+    if (num1 < num2 && num1 < num3 && num2 < num3) {
+        alert(`A ordem decrescente dos números são: ${num3}, ${num2}, ${num1}.`);
+    }
+    else if (num2 < num1 && num1 < num3 && num2 < num3) {
+
+        alert(`A ordem decrescente dos números são: ${num3}, ${num1}, ${num2}.`);
+    }
+    else if (num2 > num1 && num2 > num3 && num3 > num1) {
+        alert (`A ordem decrescente dos números são: ${num2}, ${num3}, ${num1}.`)
+    }
+
+    else if (num2 > num1 && num2 > num3 && num1 > num3) {
+        alert(`A ordem decrescente dos números são: ${num2}, ${num1}, ${num3}.`)
+    }
+
+    else if (num1 > num2 && num1 > num3 && num2 > num3) {
+        alert (`A ordem decrescente dos número são: ${num1}, ${num2}, ${num3}.`)
+    }
+
+    else {
+        alert (`A ordem decrescente dos números são: ${num1}, ${num3}, ${num2}.`)
+    }
+
+
     //SAÍDA
     
 </script>

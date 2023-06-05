@@ -2,10 +2,14 @@
 <script>
     // Recebe um ano e informa se ele é bissexto ou não.
 
-    // Entrada
-    
-    // Processamento
+    const year = Number(prompt(`Informe um ano`));
 
-    // Saída
+    if (year % 4 === 0 && year % 100 !== 0 || year % 400 === 0) {
+        alert(`Ano bissexto`)
+    }
+
+    else {
+        alert(`Esse ano tem 365 dias`)
+    }
 
 </script>
