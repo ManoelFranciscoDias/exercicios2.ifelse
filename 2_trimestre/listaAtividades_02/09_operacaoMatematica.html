@@ -7,14 +7,65 @@
     - inteiro ou decimal.
     */
 
+
     //ENTRADA
-    const num = Number
+    const numero1 = Number(prompt(`Informe um primeiro numero.`).trim().replace());
+    const numero2 = Number(prompt(`Informe um segundo numero.`).trim().replace());
+    const operacao = prompt(`Informe qual operação voce deseja aplicar nos seus numeros aplicados. (Responda com +,-,/ ou *)`).trim();
+
+
 
 
     //PROCESSAMENTO
+    if (operacao == "+") {
+        calculo = numero1 + numero2;
+    }
 
-    
-    //SAÍDA
+    else if (operacao == "-" ) {
+        calculo = numero1 - numero2;
+    }
+
+    else if (operacao == "/") {
+        calculo = numero1 / numero2;
+    }
+
+    else if (operacao == "*") {
+        calculo = numero1 * numero2;
+    }
+
+    //SAIDA
+
+    if (calculo % 2 == 0 && calculo >= 0 && Number.isInteger(calculo)) {
+        alert(`O resultado da operação é ${calculo}, e ele é par, positivo e inteiro.`)
+    }
+
+    else if (calculo % 2 == 0 && calculo >= 0 && !Number.isInteger(calculo)) {
+        alert(`O resultado da operação é ${calculo}, e ele é par, positivo e decimal.`)
+    }
+
+    else if (calculo % 2 == 0 && calculo < 0 && !Number.isInteger(calculo)) {
+        alert(`O resultado da sua operação é ${calculo}, e ele é par, negativo e decimal.`)
+    }
+
+    else if (calculo % 2 == 0 && calculo < 0 && Number.isInteger(calculo)) {
+        alert(`O resultado da sua operação é ${calculo}, e ele é par, negativo e inteiro.`)
+    }
+
+    else if (!calculo % 2 == 0 && calculo < 0 && !Number.isInteger(calculo)) {
+        alert(`O resultado da sua operação é ${calculo}, e ele é impar, negativo e decimal`)
+    }
+
+    else if (!calculo % 2 == 0 && calculo >= 0 && Number.isInteger(calculo)) {
+        alert(`O resultado da sua operação é ${calculo}, e ele é impar, positivo e inteiro`)
+    }
+
+    else if (!calculo % 2 == 0 && calculo >= 0 && !Number.isInteger(calculo)) {
+        alert(`O resultado da sua operação é ${calculo}, e ele é impar, positivo e decimal`)
+    }
+
+    else if (!calculo % 2 == 0 && calculo < 0 && Number.isInteger(calculo)) {
+        alert(`O resltado da sua operação é ${calculo}, e ele é impar, negativo e dicimal`)
+    }
 
 
 </script>
