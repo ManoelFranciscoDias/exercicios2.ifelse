@@ -11,8 +11,40 @@
     */
 
     //ENTRADA
-const pergunta1 = prompt
+
+    const pergunta1 = prompt(`Telefonou para a vítima? (Responda com S ou N)`).trim().toUpperCase();
+    const pergunta2 = prompt(`Esteve no local do crime? (Responda com S ou N)`).trim().toUpperCase();
+    const pergunta3 = prompt(`Mora perto da vítima? (Responda com S ou N)`).trim().toUpperCase();
+    const pergunta4 = prompt(`Devia para a vítima? (Responda com S ou N)`).trim().toUpperCase();
+    const pergunta5 = prompt(`Já trabalhou com a vítima? (Responda com S ou N)`).trim().toUpperCase();
+
     //PROCESSAMENTO
+
+    pergunta1 == "S" ? valorPer1 = 1 : valorPer1 = 0;
+    pergunta2 == "S" ? valorPer2 = 1 : valorPer2 = 0;
+    pergunta3 == "S" ? valorPer3 = 1 : valorPer3 = 0;
+    pergunta4 == "S" ? valorPer4 = 1 : valorPer4 = 0;
+    pergunta5 == "S" ? valorPer5 = 1 : valorPer5 = 0;
+
+
+    const calculo = valorPer1 + valorPer2 + valorPer3 + valorPer4 + valorPer5;
+
+
+    if (calculo == 2 ) {
+        alert(`Voce é suspeito!`)
+    }
+
+    else if (calculo <= 4) {
+        alert(`Voce é cumplice`)
+    }
+
+    else if (calculo == 5) {
+        alert(`Voce é um assasino!`)
+    }
+
+    else if (calculo > 2) {
+        alert(`Voce é Inocente`)
+    }
 
     //SAÍDA
 
