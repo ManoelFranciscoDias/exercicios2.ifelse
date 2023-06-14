@@ -10,17 +10,17 @@
 
     if (preco <= 280) {
         preco1 = preco * 1.20;
-        alert(`O preço final vai ser de ${preco1}`)
+        alert(`O preço final vai ser de R$${preco1.toFixed(2).replace(".",",")}`)
     }
 
     else if (preco <= 700) {
         preco2 = preco * 1.15;
-        alert(`O preço final vai ser de ${preco2}`)
+        alert(`O preço final vai ser de ${preco2.toFixed(2).replace(".",",")}`)
     }
 
     else if (preco <= 1500) {
         preco3 = preco * 1.05;
-        alert(`O preço final vai ser de ${preco3}`)
+        alert(`O preço final vai ser de ${preco3.toFixed(2).replace(".",",")}`)
     }
 
     else if (preco > 1500) {
