@@ -14,12 +14,12 @@
     */
 
     const combustivel = prompt("Qual tipo de combustivel voce prefere? G(Gsolina) ou A(alcool)").toLocaleUpperCase().trim();
-    
+
     let preco = 0;
 
     if (combustivel == "G" || combustivel == "A") {
     
-    const litros = Number(prompt("Quantos litros do seu combustivel voce deseja abastecer?").replace(",","."));
+    const litros = Number(prompt("Quantos litros do seu combustivel voce deseja colocar?").replace(",","."));
 
     if (combustivel == "G") {
        litros <= 20 ? preco = litros*6.24 : preco = litros*6.11;
@@ -33,7 +33,7 @@
 
 
     } else {
-        alert("NÃO VIU QUE É APENAS ALCOOL OU GASOLINA?");
+        alert("Erro no combustivel!");
     }
 
 
