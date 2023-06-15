@@ -8,14 +8,17 @@
     //ENTRADA
  let variavel1 = Number(prompt(`Informe um numero inteiro`));
  let variavel2 = Number(prompt(`Informe outro numero `));
- let variavel3 = variavel1
+ 
 
     //PROCESSAMENTO
 
+ const save = variavel1;
  variavel1 = variavel2;
- variavel2 = variavel3;
+ variavel2 = variavel1
 
     //SAÍDA
+
+    alert(`O primeiro valor era ${save} e o segundo era ${variavel2} e agora o primeiro é ${variavel1} e o segundo virou ${variavel2}`);
 
     
 </script>
