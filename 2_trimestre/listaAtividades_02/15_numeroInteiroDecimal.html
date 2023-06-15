@@ -5,7 +5,7 @@
     Dica: utilize uma função de arredondamento.
     */
 
-    const numero = Number(prompt(`Informe um numero`));
+    const numero = Number(prompt(`Informe um numero`).replace(",","."));
 
     if (numero % 1 === 0) {
         alert(`É um numero inteiro`)
